@@ -38,7 +38,7 @@ def detectar_anomalias(df):
             "tamaño": fila["tamaño"]
         })
 
-    # Detectar IPs públicas (no privadas)
+    # Detectar IPs publicas 
     for _, fila in df.iterrows():
         try:
             ip = ipaddress.ip_address(fila["origen"])
@@ -50,9 +50,9 @@ def detectar_anomalias(df):
                     "tamaño": fila["tamaño"]
                 })
         except ValueError:
-            continue  # IP inválida
+            continue  # IP invalida
 
-    # Detectar IPs con demasiados paquetes
+    #  IPs con demasiados paquetes
     conteo = df["origen"].value_counts()
     for ip, cantidad in conteo.items():
         if cantidad > 100:
@@ -60,7 +60,7 @@ def detectar_anomalias(df):
                 "tipo": "IP con tráfico alto",
                 "origen": ip,
                 "destino": "Varios",
-                "tamaño": None  # Corregido: evitar string "-"
+                "tamaño": None  
             })
 
     return pd.DataFrame(anomalías)
