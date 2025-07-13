@@ -6,7 +6,7 @@ NetVision es una herramienta interactiva desarrollada en Python que permite **ca
 
 ---
 
-## 🚀 Características principales
+##  Características principales
 
 - ✅ **Captura de tráfico** en tiempo real desde cualquier interfaz de red
 - 📊 Visualización por **protocolo** e **IP origen**
@@ -19,13 +19,7 @@ NetVision es una herramienta interactiva desarrollada en Python que permite **ca
 
 ---
 
-## 🖼️ Capturas de pantalla
-
-> Puedes agregar imágenes reales de tu app aquí si gustas más adelante.
-
----
-
-## ⚙️ Requisitos
+##  Requisitos
 
 - Python 3.10 o superior
 - [Npcap](https://nmap.org/npcap/) instalado en modo WinPcap-compatible (para Windows)
@@ -33,7 +27,7 @@ NetVision es una herramienta interactiva desarrollada en Python que permite **ca
 
 ---
 
-## 🧪 Instalación
+##  Instalación
 
 ```bash
 git clone https://github.com/TU_USUARIO/netvision.git
