@@ -30,7 +30,7 @@ NetVision es una herramienta interactiva desarrollada en Python que permite **ca
 ##  Instalación
 
 ```bash
-git clone https://github.com/TU_USUARIO/netvision.git
+
 cd netvision
 python -m venv venv
 venv\Scripts\activate  # En Linux/macOS: source venv/bin/activate
